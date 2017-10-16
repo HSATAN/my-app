@@ -1,4 +1,4 @@
-# coding = utf8
+# -*- coding: utf8 -*-
 
 
 import pika
@@ -10,7 +10,7 @@ channel.queue_declare(queue="hello", durable=True)
 def callback(ch, method, property, body):
     print(" [X] received %r " %body)
     import time
-    time.sleep(10)
+    time.sleep(2)
     print("ok")
     #ch.basic_ack(delivery_tag=method.delevery_tag)
 

@@ -1,4 +1,4 @@
-# coding = utf8
+# -*- coding: utf8 -*-
 
 
 import pika
@@ -13,7 +13,7 @@ channel.queue_declare(queue="hello", durable=True)
 
 channel.basic_publish(exchange="",
                       routing_key="hello",
-                      body="hello world",
+                      body="服务器发送的消息",
                       properties=pika.BasicProperties(delivery_mode=2))
 
 print(" sent message : hello world")
