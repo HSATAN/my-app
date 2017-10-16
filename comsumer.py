@@ -1,18 +1,22 @@
 # coding = utf8
 
-import pika
 
+import pika
 conn = pika.BlockingConnection(pika.ConnectionParameters(host="47.93.5.189"))
 
 channel = conn.channel()
-
 channel.queue_declare(queue="hello", durable=True)
 
-channel.basic_publish(exchange="",
-                      routing_key="hello",
-                      body="hello world",
-                      properties=pika.BasicProperties(delivery_mode=2))
+def callback(ch, method, property, body):
+    print(" [X] received %r " %body)
+    import time
+    time.sleep(10)
+    print("ok")
+    #ch.basic_ack(delivery_tag=method.delevery_tag)
 
-print(" sent message : hello world")
+channel.basic_consume(callback,
+                      queue="hello",
+                      no_ack=False)
 
-conn.close()
+print(" waiting for message ...  press CTRL+C to exit")
+channel.start_consuming()
