@@ -191,4 +191,4 @@ dataset = [
 T = build_tree(dataset, set(range(0, len(dataset[0]) - 1)))
 
 print_tree(T)
-print(classify(T, ("老年", "否", "否", "一般")))
+print(classify(T, ("中年", "是", "是", "非常好")))
