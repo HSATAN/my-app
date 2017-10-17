@@ -56,11 +56,10 @@
       <file leaf-file-name="sql.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark/sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="90">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <element signature="e#23#59#0" expanded="true" />
-                <marker date="1508249377827" expanded="true" signature="506:526" ph="select * fro... people" />
+                <marker date="1508249465256" expanded="true" signature="504:524" ph="select * fro... people" />
               </folding>
             </state>
           </provider>
@@ -818,11 +817,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark/sql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="90">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#23#59#0" expanded="true" />
-            <marker date="1508249377827" expanded="true" signature="506:526" ph="select * fro... people" />
+            <marker date="1508249465256" expanded="true" signature="504:524" ph="select * fro... people" />
           </folding>
         </state>
       </provider>
