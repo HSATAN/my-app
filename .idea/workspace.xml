@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5648e8fa-23fb-4651-9330-7fdbbcae4955" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/insert.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spark/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spark/sql.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/myapp.iml" afterPath="$PROJECT_DIR$/.idea/myapp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/sql.py" afterPath="$PROJECT_DIR$/spark/sql.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,8 +56,8 @@
       <file leaf-file-name="sql.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark/sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="150">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -169,8 +164,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="689" />
-    <option name="y" value="3" />
+    <option name="x" value="786" />
+    <option name="y" value="39" />
     <option name="width" value="1558" />
     <option name="height" value="1038" />
   </component>
@@ -597,7 +592,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="689" y="3" width="1558" height="1038" extended-state="0" />
+    <frame x="786" y="39" width="1558" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25437415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -820,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark/sql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
