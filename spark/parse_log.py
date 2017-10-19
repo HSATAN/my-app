@@ -11,12 +11,12 @@ def split_item(line=""):
     line = line.replace("- - --", "")
     lines = line.split(" ")
     item = defaultdict(lambda: "")
-    try:
-        item['month'] = lines[0]
-    except:pass
-    try:
-        item['day'] = lines[1]
-    except:pass
+    # try:
+    #     item['month'] = lines[0]
+    # except:pass
+    # try:
+    #     item['day'] = lines[1]
+    # except:pass
     # try:
     #     item['date'] = lines[6]
     # except:pass
