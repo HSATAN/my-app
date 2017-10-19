@@ -12,6 +12,7 @@ def split_item(line):
     lines = line.split(" ")
     item = dict()
     item['download_user'] = ""
+    item['access_times'] = 1
     # try:
     #     item['month'] = lines[0]
     # except:pass
@@ -38,9 +39,15 @@ def split_item(line):
             item['download_user'] = lines[-2].split('?')[1].split('&')[0].split('=')[1].split('ios_')[0]
     except:pass
     return (item['download_user']+'_'+item['interface'], item)
-
+def reduce_download_user(item1, item2):
+    item1['access_times'] += 1
+    return item1
 rdd = file.map(split_item)
-
+rdd_count = rdd.reduceByKey(reduce_download_user)
 data = rdd.take(10)
 for one in data:
+    print(one)
+
+data2 = rdd_count.take(10)
+for one in data2:
     print(one)
