@@ -10,7 +10,7 @@ def split_item(line):
 
     line = line.replace("- - --", "")
     lines = line.split(" ")
-    return line
+    return lines
     item = defaultdict(lambda: "")
     # try:
     #     item['month'] = lines[0]
