@@ -2,6 +2,7 @@
 
 
 import pika
+import time
 conn = pika.BlockingConnection(pika.ConnectionParameters(host="47.93.5.189"))
 
 channel = conn.channel()
@@ -19,4 +20,5 @@ channel.basic_consume(callback,
                       no_ack=False)
 
 print(" waiting for message ...  press CTRL+C to exit")
+
 channel.start_consuming()
