@@ -6,10 +6,11 @@ spark = SparkSession.builder.appName("log").config("log", "value").getOrCreate()
 sc = spark.sparkContext
 file = sc.textFile("file:///home/data/haproxy.log-20171010-1")
 
-def split_item(line=""):
+def split_item(line):
 
     line = line.replace("- - --", "")
     lines = line.split(" ")
+    return line
     item = defaultdict(lambda: "")
     # try:
     #     item['month'] = lines[0]
