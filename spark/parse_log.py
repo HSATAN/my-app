@@ -11,6 +11,7 @@ def split_item(line):
     line = line.replace("- - --", "")
     lines = line.split(" ")
     item = dict()
+    item['download_user'] = ""
     # try:
     #     item['month'] = lines[0]
     # except:pass
@@ -36,9 +37,10 @@ def split_item(line):
         if '/v1.0/callback/ios_click' in item['interface']:
             item['download_user'] = lines[-2].split('?')[1].split('&')[0].split('=')[1].split('ios_')[0]
     except:pass
-    return item
+    return (item['download_user']+'_'+item['interface'], item)
 
 rdd = file.map(split_item)
+
 data = rdd.take(10)
 for one in data:
     print(one)
