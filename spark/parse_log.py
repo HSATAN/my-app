@@ -40,5 +40,6 @@ def split_item(line):
     return item
 
 rdd = file.map(split_item)
-
-rdd.take(10)
+data = rdd.take(10)
+for item in data:
+    print item
