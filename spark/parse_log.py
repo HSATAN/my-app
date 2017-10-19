@@ -17,21 +17,21 @@ def split_item(line=""):
     try:
         item['day'] = lines[1]
     except:pass
-    try:
-        item['date'] = lines[6]
-    except:pass
-    try:
-        item['ip'] = lines[5]
-    except:pass
-    try:
-        item['server'] = lines[8]
-    except:pass
-    try:
-        item['interface'] = lines[-2].split('?')[0]
-    except:pass
-    try:
-        item['method'] = lines[-3]
-    except:pass
+    # try:
+    #     item['date'] = lines[6]
+    # except:pass
+    # try:
+    #     item['ip'] = lines[5]
+    # except:pass
+    # try:
+    #     item['server'] = lines[8]
+    # except:pass
+    # try:
+    #     item['interface'] = lines[-2].split('?')[0]
+    # except:pass
+    # try:
+    #     item['method'] = lines[-3]
+    # except:pass
     # try:
     #     if '/v1.0/callback/ios_click' in item['interface']:
     #         item['download_user'] = lines[-2].split('?')[1].split('&')[0].split('=')[1].split('ios_')[0]
