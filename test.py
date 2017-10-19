@@ -56,10 +56,8 @@ def printData(data):
             f.write(json.dumps(ids))
 getData("huangkaijie").addCallback(printData)
 
-<<<<<<< HEAD
 reactor.callLater(5,reactor.stop)
 reactor.run()
-=======
 class Getter():
     def getdata(self, x):
         d = defer.Deferred()
