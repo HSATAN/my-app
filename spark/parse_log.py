@@ -10,7 +10,6 @@ def split_item(line):
 
     line = line.replace("- - --", "")
     lines = line.split(" ")
-    return lines
     item = defaultdict(lambda: "")
     # try:
     #     item['month'] = lines[0]
@@ -27,9 +26,9 @@ def split_item(line):
     # try:
     #     item['server'] = lines[8]
     # except:pass
-    # try:
-    #     item['interface'] = lines[-2].split('?')[0]
-    # except:pass
+    try:
+        item['interface'] = lines[-2].split('?')[0]
+    except:pass
     # try:
     #     item['method'] = lines[-3]
     # except:pass
@@ -41,5 +40,5 @@ def split_item(line):
 
 rdd = file.map(split_item)
 data = rdd.take(10)
-for item in data:
-    print item
+for one in data:
+    print one
