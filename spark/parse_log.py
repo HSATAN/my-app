@@ -32,10 +32,10 @@ def split_item(line=""):
     try:
         item['method'] = lines[-3]
     except:pass
-    try:
-        if '/v1.0/callback/ios_click' in item['interface']:
-            item['download_user'] = lines[-2].split('?')[1].split('&')[0].split('=')[1].split('ios_')[0]
-    except:pass
+    # try:
+    #     if '/v1.0/callback/ios_click' in item['interface']:
+    #         item['download_user'] = lines[-2].split('?')[1].split('&')[0].split('=')[1].split('ios_')[0]
+    # except:pass
     return item
 
 rdd = file.map(split_item)
